@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    background-color: darkgray;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameBox{
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(177, 177, 177);
+    -webkit-box-shadow: 0px 11px 24px -8px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 11px 24px -8px rgba(255, 255, 255, 1);
+    box-shadow: 0px 11px 24px -8px rgba(255, 255, 255, 1);
+    position: relative;
+}
+.fruits{
+    position: absolute;
+    font-size: 3rem;
+    cursor: pointer;
+}
+#infoBox{
+    font-size: 2rem;
+
+
+}
+.btnBox{
+    display: flex;
+    flex-direction: row;
+}
+button {
+    width: 8rem;
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+button:hover,
+button:focus {
+    -webkit-box-shadow: 0px 11px 24px -8px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 11px 24px -8px rgba(255, 255, 255, 1);
+    box-shadow: 0px 11px 24px -8px rgba(255, 255, 255, 1);
+  transform: translateY(-0.25em);
+}
+
+section p{
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#infoBox, #time{
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#popupbox{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    user-select: none;
+    width: 400px;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+    border:1px solid black;
+    box-shadow: 0px 5px 10px rgb(150, 150, 150);
+    z-index: 9999;
+    opacity: 0;
+}
+#popupbox i{
+    font-size: 2rem;
+    color: black;
+}
+#popupbox h3{
+    margin: 10px;
+    font-size: 4rem;
+}
